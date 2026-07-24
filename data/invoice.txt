@@ -1,0 +1,7 @@
+Supermercado ABC
+
+Leche               $2.500
+Pan                 $1.200
+Queso               $5.800
+
+TOTAL A PAGAR: $9.500

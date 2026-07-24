@@ -1,0 +1,11 @@
+Si importás saludos.py desde main.py, ese print("Soy saludos.py") también se ejecuta.
+
+Eso puede ser molesto, porque:
+
+quizás no querés que ese mensaje aparezca cada vez que importás el archivo,
+solo querés que se ejecute cuando el archivo se corre directamente.
+Ahí entra if __name__ == "__main__":
+
+Ejemplo mejor:
+
+Archivo saludos.py
