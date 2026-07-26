@@ -17,4 +17,11 @@ class CreditCardAgent:
 
     def get_total(self)-> float:
         return extract_total(self.summary)
-        
+
+    def answer_question(self, question: str):
+        if "total" in question.lower():
+            return self.get_total()
+        elif "minimo" in question.lower() or "minimum" in question.lower():
+            return "La consulta del pago mínimo todavía no está implementada."
+        else:
+            return "No entendí la pregunta."
