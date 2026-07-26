@@ -1,20 +1,10 @@
-from skills.hello import say_hello
-from skills.read_text import read_text
-from skills.extract_total import extract_total
-
-
-
+from agent import CreditCardAgent
 
 def main():
-    content = read_text("data/invoice.txt")
-    total = extract_total(content)
-    print(f"El total de la tarjeta es: {total}")
-
-
-
-
-
-
+    agent = CreditCardAgent()
+    agent.load_summary("data/invoice.txt")
+    print(agent.get_summary())
+    print(f"Total: ${agent.get_total():.2f}")
 
 
 if __name__ == "__main__":
